@@ -4,26 +4,41 @@
 /* === color r75 g37 b130 === */
 
 /* === global === */
-h1 {
-	color: white;
-	background-color: rgba(75, 37, 130, 1); }
 /* === Header === */
 .social .menu a {
 	margin-top: -2rem;
 	color: rgba(75, 37, 130, 1);
 	font-size: 2rem; }
 /* === navegacion === */
-.navegacion .top-bar {
+.navegacion .menu-centered {
 	border-top: 1px solid;
 	border-bottom: 1px solid;
 	border-color: rgba(75, 37, 130, 1);
-	background: transparent;
 	margin-bottom: 0.5rem; }
-.navegacion .top-bar ul {
-	background: transparent; }
+.navegacion .menu li a {
+	color: rgba( 75, 37, 130, 1);
+	font-size: 1.5rem;
+	padding: 0.7rem 3rem; }
+.navegacion .menu li a:hover {
+	font-size: bold;
+	font-style: italic; }
 /* === slide === */
 .lateral {
 	background-color: rgba(75, 37, 130, 1); }
+/* === proximos eventos === */
+.contenido h1 {
+	color: white;
+	font-weight: bold;
+	padding-left: 3rem;
+	background-color: rgba(75, 37, 130, 1); }
+.contenido h5, .contenido h5 small, .contenido p {
+	color: rgba( 75, 37, 130, 1); }
+.contenido h5, .contenido h5 small {
+	font-weight: bold; }
+.contenido .badge.link {
+	background-color: #222222; }
+.contenido .alinear-fondo {
+	margin-top: 220px; }
 /* === footer === */
 .footer {
 	background: black; }
@@ -32,7 +47,15 @@ h1 {
 	margin-bottom: 2rem; }
 .footer .menu a {
 	color: white; }
-/* === disclaimer === */
+.footer .badge.blanco {
+	background-color: white;
+	color: transparent; }
+.footer .badge.azul {
+	background-color: blue;
+	color: transparent; }
+.footer .badge.rojo {
+	background-color: red;
+	color: transparent; }
 /* ============================= */
 /* ! Layout for mobile version   */
 /* ============================= */

@@ -1,0 +1,58 @@
+/* ============================== */
+/* ! Layout for desktop version   */
+/* ============================== */
+
+/* === globales === */
+body {
+	background-color: rgba(0, 0, 0, 1); }
+h1, h2, h3, h4, h5, h6, p {
+	color: rgba(255, 255, 255, 1); }
+.mascara img {
+	border-radius: 400px !important;
+	-moz-border-radius: 400px !important;
+	-webkit-border-radius: 400px !important;
+	-khtml-border-radius: 400px !important;
+	overflow: hidden; }
+/* === Header === */
+.header .social .menu li a {
+	color: rgba(255, 255, 255, 1);
+	font-size: 1.75rem; }
+/* === navegacion === */
+.navegacion .menu li {
+	width: 23%; }
+	.navegacion .menu li.active a {
+	background-color: transparent;
+	border-top: 2px solid white; }
+.navegacion .menu li a {
+	color: rgba(255, 255, 255, 1);
+	width: 100%;
+	text-align: center; }
+/* === bienvenidos === */
+.bienvenidos {
+	padding-top: 5rem;
+	padding-bottom: 4rem; }
+	.bienvenidos h1 {
+		color: tomato; }
+	.bienvenidos p {
+		margin-bottom: 6rem; }
+/* === footer === */
+.footer {
+	padding-top: 2rem;
+	padding-bottom: 3rem; }
+.footer a {
+	color: rgba(255, 255, 255, 1); }
+	.footer a:hover {
+		color: rgba(255, 255, 255, 1); }
+
+/* ============================= */
+/* ! Layout for mobile version   */
+/* ============================= */
+@media handheld, only screen and (max-width: 780px) {}
+/* ============================= */
+/* ! Layout for mobile version   */
+/* ============================= */
+@media handheld, only screen and (max-width: 400px) {}
+/* ========================================== */
+/* ! Provide higher res assets for iPhone 4   */
+/* ========================================== */
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {}

@@ -1,0 +1,63 @@
+/* ============================== */
+/* ! Layout for desktop version   */
+/* ============================== */
+/* === colores === */
+/* gris #28292b */
+/* gris oscuro #151716 */
+/* dorado #8f8144 */
+/* footer #1c1a1b */
+
+/* === globales === */
+body {
+	background-color: #28292b; }
+h1, h2, h3, h4, h5, h6 {
+	color: #8f8144; }
+p {
+	font-size: 0.90rem;
+	color: white; }
+a {
+	color: #8f8144; }
+	a:hover {
+	color: #8f8144; }
+.callout.renegade {
+	background-color: #151716; }
+.separador-lateral {
+	border-right: 1px solid #8f8144; }
+/* === navegacion ===*/
+.navegacion .menu li a {
+	color: #8f8144; }
+	.navegacion .menu li.active a {
+		background-color: black; }
+/* === seccion === */
+.seccion {
+	margin-top: 2rem; }
+/* === eventos === */
+.eventos .meta span {
+	color: #8f8144; }
+.eventos .item {
+	margin-bottom: 2rem; }
+.eventos a {
+	font-size: 0.85rem; }
+.eventos p {
+	font-size: 0.85rem; }
+/* === footer === */
+.footer {
+	background-color: #1c1a1b;
+	padding-top: 1rem; }
+	.footer .menu i {
+		font-size: 1.55rem;
+		color: #8f8144; }
+
+
+/* ============================= */
+/* ! Layout for mobile version   */
+/* ============================= */
+@media handheld, only screen and (max-width: 780px) {}
+/* ============================= */
+/* ! Layout for mobile version   */
+/* ============================= */
+@media handheld, only screen and (max-width: 400px) {}
+/* ========================================== */
+/* ! Provide higher res assets for iPhone 4   */
+/* ========================================== */
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {}
