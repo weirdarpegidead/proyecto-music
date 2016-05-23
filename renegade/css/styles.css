@@ -23,6 +23,8 @@ a {
 	background-color: #151716; }
 .separador-lateral {
 	border-right: 1px solid #8f8144; }
+.off-canvas-content, .off-canvas-content {
+    background-color: transparent; }
 /* === navegacion ===*/
 .navegacion .menu li a {
 	color: #8f8144; }

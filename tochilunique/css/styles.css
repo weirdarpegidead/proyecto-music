@@ -5,7 +5,7 @@
 /* === globales === */
 body {
 	background-color: rgba(0, 0, 0, 1); }
-h1, h2, h3, h4, h5, h6, p {
+h1, h2, h3, h4, h5, h6, p, dl, a {
 	color: rgba(255, 255, 255, 1); }
 .mascara img {
 	border-radius: 400px !important;
@@ -13,45 +13,103 @@ h1, h2, h3, h4, h5, h6, p {
 	-webkit-border-radius: 400px !important;
 	-khtml-border-radius: 400px !important;
 	overflow: hidden; }
+.button.alert {
+    background-color: #902810;
+    color: #fefefe; }
+    .button.alert:hover, .button.alert:focus {
+      background-color: #da3116;
+      color: #fefefe; }
+.off-canvas-content, .off-canvas-content {
+    background-color: transparent; }
 /* === Header === */
 .header .social .menu li a {
 	color: rgba(255, 255, 255, 1);
 	font-size: 1.75rem; }
+	.header .cortina {
+		height: 5rem;
+		background-image: url('../img/cortina.jpg');
+		background-repeat: no-repeat;
+		background-size: cover; }
+/* === social === */
+.social {
+	margin-top: 6rem; }
 /* === navegacion === */
 .navegacion .menu li {
 	width: 23%; }
 	.navegacion .menu li.active a {
 	background-color: transparent;
-	border-top: 2px solid white; }
+	color: #902810;
+	border-top: 2px solid #902810; }
 .navegacion .menu li a {
+	border-top: 2px solid white;
 	color: rgba(255, 255, 255, 1);
 	width: 100%;
 	text-align: center; }
-/* === bienvenidos === */
-.bienvenidos {
-	padding-top: 5rem;
-	padding-bottom: 4rem; }
-	.bienvenidos h1 {
-		color: tomato; }
-	.bienvenidos p {
+.navegacion .top-bar, .top-bar ul {
+    background-color: transparent; }
+/* === sub-navegacion === */
+.sub-navegacion .menu li {}
+	.sub-navegacion .menu li.active a {
+	background-color: transparent;
+	color: #902810; }
+.sub-navegacion .menu li a {
+	color: rgba(255, 255, 255, 1);
+	width: 100%;
+	text-align: center; }
+/* === contenido === */
+.contenido {
+	padding-top: 1rem;
+	padding-bottom: 1rem; }
+	.contenido a {
+		color: #902810; }
+	.contenido.home {
+		padding-top: 5rem;
+		padding-bottom: 4rem; }
+	h1, h2, h3, h4, h5, h6 {
+		color: #902810; }
+		.page h1 {
+			margin-bottom: 3rem; }
+		h1 span, h2 span, h3 span, h4 span, h5 span, h6 span {
+			color: white; }
+	.contenido.home p {
 		margin-bottom: 6rem; }
+	.contenido .meta span {
+		color: #999999;	}
+		.contenido .meta span i {
+		color: #902810;
+		font-size: 1.3rem; }
+	.contenido .meta p {
+		color: #999999; }
 /* === footer === */
 .footer {
+	background-image: url('../img/cortina.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
 	padding-top: 2rem;
 	padding-bottom: 3rem; }
 .footer a {
 	color: rgba(255, 255, 255, 1); }
 	.footer a:hover {
 		color: rgba(255, 255, 255, 1); }
+/* ============================= */
+/* ! Layout for mobile version   */
+/* ============================= */
+@media handheld, only screen and (max-width: 1024px) {
+	.social {
+	margin-top: 0rem; }
 
+}
 /* ============================= */
 /* ! Layout for mobile version   */
 /* ============================= */
-@media handheld, only screen and (max-width: 780px) {}
-/* ============================= */
-/* ! Layout for mobile version   */
-/* ============================= */
-@media handheld, only screen and (max-width: 400px) {}
+@media handheld, only screen and (max-width: 640px) {
+.navegacion .menu li a {
+	border-top: none; }
+.navegacion .menu li a i {
+	font-size: 2rem; }
+.navegacion .menu li {
+	width: auto; }
+}
 /* ========================================== */
 /* ! Provide higher res assets for iPhone 4   */
 /* ========================================== */
