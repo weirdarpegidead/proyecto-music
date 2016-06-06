@@ -35,8 +35,12 @@ h1, h2, h3, h4, h5, h6, p, dl, a {
 	margin-top: 6rem; }
 /* === navegacion === */
 .navegacion .menu li {
-	width: 23%; }
+	width: 9%; }
 	.navegacion .menu li.active a {
+	background-color: transparent;
+	color: #902810;
+	border-top: 2px solid #902810; }
+	.navegacion .menu li.current-menu-item a {
 	background-color: transparent;
 	color: #902810;
 	border-top: 2px solid #902810; }
@@ -47,15 +51,26 @@ h1, h2, h3, h4, h5, h6, p, dl, a {
 	text-align: center; }
 .navegacion .top-bar, .top-bar ul {
     background-color: transparent; }
+.off-canvas {
+	background-color: black;}
 /* === sub-navegacion === */
 .sub-navegacion .menu li {}
 	.sub-navegacion .menu li.active a {
+	background-color: transparent;
+	color: #902810; }
+	.sub-navegacion .menu li.current-menu-item a {
 	background-color: transparent;
 	color: #902810; }
 .sub-navegacion .menu li a {
 	color: rgba(255, 255, 255, 1);
 	width: 100%;
 	text-align: center; }
+/* === slide === */
+.slide .orbit-container {
+	height: auto !important;
+	overflow: visible; }
+.slide .orbit-container li {
+	max-height: none !important; }
 /* === contenido === */
 .contenido {
 	padding-top: 1rem;
@@ -73,6 +88,8 @@ h1, h2, h3, h4, h5, h6, p, dl, a {
 			color: white; }
 	.contenido.home p {
 		margin-bottom: 6rem; }
+	.contenido .meta {
+		margin-bottom: 1rem; }
 	.contenido .meta span {
 		color: #999999;	}
 		.contenido .meta span i {
@@ -80,6 +97,11 @@ h1, h2, h3, h4, h5, h6, p, dl, a {
 		font-size: 1.3rem; }
 	.contenido .meta p {
 		color: #999999; }
+.prox-event ul:first-child {
+	background-color: tomato; }
+.single img.attachment-cuadrada {
+	float: left;
+	margin-right: 1rem; }
 /* === footer === */
 .footer {
 	background-image: url('../img/cortina.jpg');

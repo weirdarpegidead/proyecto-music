@@ -4,6 +4,12 @@
 /* === color r75 g37 b130 === */
 
 /* === global === */
+.button.alert {
+    background-color: rgba(75, 37, 130, 1);
+    color: white; }
+    .button.alert:hover, .button.alert:focus {
+      background-color: rgba(75, 37, 130, 1);
+      color: white; }
 /* === Header === */
 .social .menu a {
 	margin-top: -2rem;
@@ -22,6 +28,12 @@
 .navegacion .menu li a:hover {
 	font-size: bold;
 	font-style: italic; }
+.sub-navegacion .menu {
+	border-top: 1px solid;
+	border-bottom: 1px solid;
+	border-color: rgba(75, 37, 130, 1);
+	margin-bottom: 3rem;
+	margin-top: 1rem; }
 /* === slide === */
 .lateral {
 	background-color: rgba(75, 37, 130, 1); }
@@ -29,8 +41,17 @@
 .contenido h1 {
 	color: white;
 	font-weight: bold;
-	padding-left: 3rem;
+	font-size: 2.5rem;
 	background-color: rgba(75, 37, 130, 1); }
+.contenido h3 {
+	color: rgba(75, 37, 130, 1);
+	font-weight: 500; }
+.contenido.galima h4 {
+	background-color: #f38f42;
+	color: white; }
+.contenido.galvids h4 {
+	background-color: #da1359;
+	color: white; }
 .contenido h5, .contenido h5 small, .contenido p {
 	color: rgba( 75, 37, 130, 1); }
 .contenido h5, .contenido h5 small {

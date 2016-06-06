@@ -70,19 +70,4 @@ register_sidebar(array(
  'before_widget' => '<div class="large-12 columns text-center">',
  'after_widget' => '</div>',
  ));
-/* === vistas === */
-function views_count(){
-    if(is_single()){
-        global $post;
-        $views = get_post_meta($post->ID, '_views', true);
-        if(!$views){
-            $views = 1;
-        } else {
-            $views += 1;
-        }
-        update_post_meta($post->ID, '_views', $views);
-    } // is_single()
-}
-
-add_action('wp_head', 'views_count');
 ?>

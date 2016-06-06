@@ -3,11 +3,13 @@
 add_theme_support( 'post-thumbnails' );
 add_image_size( 'slide', 1280, 400, true );
 add_image_size( 'cuadrada', 700, 700, true);
+add_image_size( 'rectangular', 700, 300, true);
 /* === sacar barra de admin == */
 add_filter( 'show_admin_bar', '__return_false' );
 /* === menus === */
 register_nav_menus ( array(
     'menu_principal' => 'menu_header',
+    'menu_footer' => 'footer',
     'menu_galerias' => 'galerias'
     ));
 /* === agrego una extencion para el excerpt personalizada ===
@@ -64,25 +66,10 @@ function atrib_imagen_destacada() {
     $imgDestacada = wp_get_attachment_image_src( $thumbID, 'full' ); // Sustituir por thumbnail, medium, large o full
     return $imgDestacada[0]; // 0 = ruta, 1 = altura, 2 = anchura, 3 = boolean
 }
-/* === widgets === */
+/* === widgets === 
 register_sidebar(array(
  'name' => 'texto-footer',
  'before_widget' => '<div class="large-12 columns text-center">',
  'after_widget' => '</div>',
- ));
-/* === vistas === */
-function views_count(){
-    if(is_single()){
-        global $post;
-        $views = get_post_meta($post->ID, '_views', true);
-        if(!$views){
-            $views = 1;
-        } else {
-            $views += 1;
-        }
-        update_post_meta($post->ID, '_views', $views);
-    } // is_single()
-}
-
-add_action('wp_head', 'views_count');
+ ));*/
 ?>

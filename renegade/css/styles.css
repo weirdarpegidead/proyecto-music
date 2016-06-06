@@ -25,11 +25,31 @@ a {
 	border-right: 1px solid #8f8144; }
 .off-canvas-content, .off-canvas-content {
     background-color: transparent; }
-/* === navegacion ===*/
+.reproductor {
+	margin-top: 1rem;
+	margin-bottom: 1rem; }
+/* === navegacion === */
+.navegacion .menu li {
+	width: 9%; }
 .navegacion .menu li a {
-	color: #8f8144; }
+	text-align: center;
+	color: #666666; }
 	.navegacion .menu li.active a {
-		background-color: black; }
+		background-color: black;
+		color: #8f8144; }
+	.navegacion .menu li.current-menu-item a {
+		background-color: black;
+		color: #8f8144; }
+.sub-navegacion {
+	margin-top: 1rem;
+	margin-bottom: 1rem; }
+.sub-navegacion .menu li.active a {
+	background-color: transparent; }
+.sub-navegacion .menu li.current-menu-item a {
+	background-color: transparent; }
+/* === contenido === */
+.contenido h2 {
+	color: white; }
 /* === seccion === */
 .seccion {
 	margin-top: 2rem; }
