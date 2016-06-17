@@ -1,16 +1,14 @@
           <!-- footer -->
           <div class="large-12 columns footer">
             <div class="row">
-              <div class="large-4 columns">
-                <a href="#"><img src="<?php bloginfo('template_directory'); ?>/img/logo.png"></a>
+              <div class="small-6 medium-4 small-centered medium-centered columns">
+                <a href="#"><img src="<?php bloginfo('template_directory'); ?>/img/logobeatitudbn.jpg"></a>
               </div>
-              <div class="large-4 columns end menu-centered">
-                <?php wp_nav_menu(
-                array(
-                'container' => false,
-                'items_wrap' => '<ul class="menu vertical">%3$s</ul>',
-                'theme_location' => 'menu_footer'
-                )); ?>
+              <div class="large-4 columns end text-center contacto">
+                <a href="#"><span class="badge secondary"><i class="fi-at-sign"></i></span> Correo</a><br>
+                <a href="#"><span class="badge success"><i class="fi-mobile"></i></span> Celular</a><br>
+                <a href="#"><span class="badge alert"><i class="fi-telephone"></i></span> Telefono</a><br>
+                <a href="#"><span class="badge warning"><i class="fi-mail"></i></span> Otro</a><br>
               </div>
               <div class="large-12 columns text-center">
                 <span class="badge blanco">1</span>

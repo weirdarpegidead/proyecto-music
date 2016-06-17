@@ -1,14 +1,14 @@
           <?php
           /*
-          Template Name: eventos
+          Template Name: espectaculos
           */
           ?>
           <?php get_header(); ?>
           <!-- eventos -->
           <div class="row contenido page">
-            <?php query_posts('category_name=eventos&posts_per_page=1' ); while ( have_posts() ) : the_post(); ?>
+            <?php query_posts('category_name=espectaculos&posts_per_page=1' ); while ( have_posts() ) : the_post(); ?>
             <div class="large-12 columns">
-              <h1>Proximos Eventos</h1>
+              <h1>Proximos Espectáculos</h1>
             </div>
             <div class="large-12 columns">
               <h3><?php the_title(); ?></h3>
@@ -30,9 +30,9 @@
           <!-- eventos anteriores -->
           <div class="row contenido">
             <div class="large-12 columns">
-              <h1>Eventos Anteriores</h1>
+              <h1>Espectáculos Anteriores</h1>
             </div>
-            <?php query_posts('category_name=eventos&posts_per_page=6' ); while ( have_posts() ) : the_post(); ?>
+            <?php query_posts('category_name=espectaculos&posts_per_page=6' ); while ( have_posts() ) : the_post(); ?>
             <div class="large-2 columns text-center">
               <a href="<?php echo get_permalink(); ?>"><?php if ( has_post_thumbnail() ) { the_post_thumbnail( 'cuadrada' ); } ?></a>
               <h5><?php the_title(); ?></h5>

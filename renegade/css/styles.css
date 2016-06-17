@@ -28,6 +28,12 @@ a {
 .reproductor {
 	margin-top: 1rem;
 	margin-bottom: 1rem; }
+.post-meta {
+	list-style: none; }
+	.post-meta span.post-meta-key {
+		display: none; }
+	.post-meta li {
+		color: rgba( 255, 255, 255, 1); }
 /* === navegacion === */
 .navegacion .menu li {
 	width: 9%; }
@@ -74,7 +80,10 @@ a {
 /* ============================= */
 /* ! Layout for mobile version   */
 /* ============================= */
-@media handheld, only screen and (max-width: 780px) {}
+@media handheld, only screen and (max-width: 1024px) {
+	.navegacion .menu li {
+	width:  auto; }
+}
 /* ============================= */
 /* ! Layout for mobile version   */
 /* ============================= */

@@ -10,11 +10,22 @@
     .button.alert:hover, .button.alert:focus {
       background-color: rgba(75, 37, 130, 1);
       color: white; }
+.post-meta {
+	list-style: none; }
+	.post-meta span.post-meta-key {
+		display: none; }
+	.post-meta li {
+		color: rgba( 75, 37, 130, 1); }
 /* === Header === */
 .social .menu a {
 	margin-top: -2rem;
 	color: rgba(75, 37, 130, 1);
 	font-size: 2rem; }
+/* === slide === */
+.slide .orbit-container {
+	height: auto !important;}
+.slide .orbit-container li {
+	max-height: none !important; }
 /* === navegacion === */
 .navegacion .menu-centered {
 	border-top: 1px solid;
@@ -43,6 +54,10 @@
 	font-weight: bold;
 	font-size: 2.5rem;
 	background-color: rgba(75, 37, 130, 1); }
+	.contenido h1.encuesta {
+		background-color: lightgreen ; }
+	.contenido h1.concurso {
+		background-color: darkturquoise;  }
 .contenido h3 {
 	color: rgba(75, 37, 130, 1);
 	font-weight: 500; }
@@ -60,13 +75,19 @@
 	background-color: #222222; }
 .contenido .alinear-fondo {
 	margin-top: 220px; }
+.contenido .thum img {
+	margin-bottom: 1rem; }
+.meta {
+	margin-bottom: 1rem;
+	opacity: 0.6;
+    font-size: 0.85rem; }
 /* === footer === */
 .footer {
-	background: black; }
-.footer .menu {
-	margin-top: 2rem;
+	background: black;
+	padding-top: 2rem; }
+.footer .contacto {
 	margin-bottom: 2rem; }
-.footer .menu a {
+.footer a {
 	color: white; }
 .footer .badge.blanco {
 	background-color: white;
@@ -80,7 +101,10 @@
 /* ============================= */
 /* ! Layout for mobile version   */
 /* ============================= */
-@media handheld, only screen and (max-width: 780px) {}
+@media handheld, only screen and (max-width: 1024px) {
+	.contenido .alinear-fondo {
+		margin-top: 1rem; }
+}
 /* ============================= */
 /* ! Layout for mobile version   */
 /* ============================= */
