@@ -1,10 +1,11 @@
           <?php get_header(); ?>
           <!-- reproductor -->
           <div class="row reproductor">
-            <div class="large-12 columns text-center">
-              <img src="http://placehold.it/600x100">
+            <div class="large-6 large-centered columns">
+              <iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/218242707&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
             </div>
           </div>
+
           <!-- proyectos -->
           <div class="row secciones">
             <div class="small-6 medium-3 columns text-center">
@@ -44,19 +45,21 @@
             </div>
             <div class="medium-4 columns">
               <h4>Proximamente</h4>
+              <?php query_posts('category_name=proximamente&posts_per_page=3' ); while ( have_posts() ) : the_post(); ?>
               <div class="row">
                 <div class="large-12 columns">
-                  <a href="#"><img src="http://placehold.it/400x150"></a>
+                  <a href="<?php echo get_permalink(); ?>"><?php if ( has_post_thumbnail() ) { the_post_thumbnail( 'slide' ); } ?></a>
                 </div>
-                <div class="large-2 columns text-center"><span>Mayo</span><br><span>23</span></div>
+                <div class="large-2 columns text-center"><span><?php the_time('F j') ?></span></div>
                 <div class="large-10 columns">
-                  <h6>Titulo</h6>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                  <h6><?php the_title(); ?></h6>
+                  <?php my_excerpt(10); ?>
                 </div>
                 <div class="large-12 columns">
-                  <a href="#">Más info</a>
+                  <a href="<?php echo get_permalink(); ?>">Más info</a>
                 </div>
               </div>
+              <?php endwhile; wp_reset_query(); ?>
             </div>
           </div>
           <?php get_footer(); ?>

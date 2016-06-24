@@ -6,54 +6,38 @@
               <a href="<?php echo site_url(); ?>/albumes/">
                 <img src="<?php bloginfo('template_directory'); ?>/img/botondiscos.jpg">
               </a>
-              <div class="callout renegade">
-                <p>Pequeño resumen excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                <a href="<?php echo site_url(); ?>/albumes/">Más</a>
-              </div>
             </div>
             <div class="small-6 medium-3 columns">
               <h4>Videos</h4>
               <a href="<?php echo site_url(); ?>/videos/">
                 <img src="<?php bloginfo('template_directory'); ?>/img/botonplay.jpg">
               </a>
-              <div class="callout renegade">
-                <p>Pequeño resumen excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                <a href="<?php echo site_url(); ?>/videos/">Más</a>
-              </div>
             </div>
             <div class="small-6 medium-3 columns">
-              <h4>Tracks</h4>
-              <a href="<?php echo site_url(); ?>/tracks/">
+              <h4>Noticias</h4>
+              <a href="<?php echo site_url(); ?>/noticias/">
                 <img src="<?php bloginfo('template_directory'); ?>/img/botontracks.jpg">
               </a>
-              <div class="callout renegade">
-                <p>Pequeño resumen excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                <a href="<?php echo site_url(); ?>/tracks/">Más</a>
-              </div>
             </div>
             <div class="small-6 medium-3 columns">
               <h4>Eventos</h4>
               <a href="<?php echo site_url(); ?>/eventos/">
                 <img src="<?php bloginfo('template_directory'); ?>/img/botoneventos.jpg">
               </a>
-              <div class="callout renegade">
-                <p>Pequeño resumen excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                <a href="<?php echo site_url(); ?>/eventos/">Más</a>
-              </div>
             </div>
           </div>
           <!-- seccion -->
-          <div class="row seccion">
+          <div class="row seccion" data-equalizer>
             <?php query_posts('category_name=home&posts_per_page=1' ); while ( have_posts() ) : the_post(); ?>
-            <div class="medium-6 large-4 columns separador-lateral">
+            <div class="medium-6 large-4 columns separador-lateral" data-equalizer-watch>
               <h4><?php the_title(); ?></h4>
               <a href="<?php echo get_permalink(); ?>"><?php if ( has_post_thumbnail() ) { the_post_thumbnail( 'cuadrada' ); } ?></a>
               <?php my_excerpt(30); ?>
-              <a href="<?php echo get_permalink(); ?>">Info</a>
+              <a href="<?php echo get_permalink(); ?>">Más info</a>
             </div>
             <?php endwhile; wp_reset_query(); ?>
             <?php query_posts('category_name=reciente&posts_per_page=1' ); while ( have_posts() ) : the_post(); ?>
-            <div class="medium-6 large-4 columns separador-lateral">
+            <div class="medium-6 large-4 columns separador-lateral" data-equalizer-watch>
               <h4>Recientes</h4>
               <p class="lead"><?php the_title(); ?></p>
               <?php my_excerpt(10); ?>

@@ -50,15 +50,20 @@ a {
 	margin-top: 1rem;
 	margin-bottom: 1rem; }
 .sub-navegacion .menu li.active a {
-	background-color: transparent; }
+	background-color: transparent;
+	color: white; }
 .sub-navegacion .menu li.current-menu-item a {
-	background-color: transparent; }
+	background-color: transparent;
+	color: white; }
 /* === contenido === */
 .contenido h2 {
 	color: white; }
+.contenido .integrantes {
+	margin-bottom: 1.25rem; }
 /* === seccion === */
 .seccion {
-	margin-top: 2rem; }
+	margin-top: 2rem;
+	margin-bottom: 1rem; }
 /* === eventos === */
 .eventos .meta span {
 	color: #8f8144; }
@@ -75,8 +80,10 @@ a {
 	.footer .menu i {
 		font-size: 1.55rem;
 		color: #8f8144; }
-
-
+/* === galeria === */
+.gallery {
+    width: 100%;
+    float: left; }
 /* ============================= */
 /* ! Layout for mobile version   */
 /* ============================= */

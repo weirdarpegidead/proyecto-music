@@ -98,6 +98,10 @@
 .footer .badge.rojo {
 	background-color: red;
 	color: transparent; }
+/* === galeria === */
+.gallery {
+    width: 100%;
+    float: left; }
 /* ============================= */
 /* ! Layout for mobile version   */
 /* ============================= */

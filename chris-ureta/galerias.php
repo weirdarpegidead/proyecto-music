@@ -10,18 +10,12 @@
               <h1><?php the_title(); ?></h1>
               <div class="row">
                 <div class="large-12 columns sub-navegacion">
-                  <ul class="menu align-right">
-                    <li><a>Galeria 3</a></li>
-                    <li><a>Galeria 2</a></li>
-                    <li><a>Galeria 1</a></li>
-                    <li class="active"><a>Ver Todo</a></li>
-                  </ul>
-                  <?php// wp_nav_menu(
-                  //array(
-                  //'container' => false,
-                  //'items_wrap' => '<ul class="menu align-right">%3$s</ul>',
-                  //'theme_location' => 'menu_galerias'
-                  //)); ?>
+                  <?php wp_nav_menu(
+                  array(
+                  'container' => false,
+                  'items_wrap' => '<ul class="menu align-right">%3$s</ul>',
+                  'theme_location' => 'menu_galerias'
+                  )); ?>
                 </div>
               </div>
             </div>

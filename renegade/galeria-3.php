@@ -1,6 +1,6 @@
           <?php
           /*
-          Template Name: galerias
+          Template Name: galerias-año-anterior
           */
           ?>
           <?php get_header(); ?>
@@ -19,7 +19,7 @@
                 </div>
               </div>
             </div>
-            <?php query_posts('category_name=galeria&posts_per_page=6' ); while ( have_posts() ) : the_post(); ?>
+            <?php query_posts('category_name=galeria&posts_per_page=6&year=2015' ); while ( have_posts() ) : the_post(); ?>
             <div class="large-4 columns">
               <div class="row">
                 <div class="large-12 columns text-center">

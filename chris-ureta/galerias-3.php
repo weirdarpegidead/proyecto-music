@@ -1,10 +1,10 @@
           <?php
           /*
-          Template Name: galerias
+          Template Name: galerias-año-anterior
           */
           ?>
           <?php get_header(); ?>
-          <!-- galeria -->
+          <!-- contenido galerias -->
           <div class="row contenido page">
             <div class="large-12 columns">
               <h1><?php the_title(); ?></h1>
@@ -19,7 +19,7 @@
                 </div>
               </div>
             </div>
-            <?php query_posts('category_name=galeria&posts_per_page=6' ); while ( have_posts() ) : the_post(); ?>
+            <?php query_posts('category_name=galeria&posts_per_page=6&year=2015' ); while ( have_posts() ) : the_post(); ?>
             <div class="large-4 columns">
               <div class="row">
                 <div class="large-12 columns text-center">
@@ -27,6 +27,7 @@
                   <h5><?php the_title(); ?></h5>
                   <?php my_excerpt(30); ?>
                 </div>
+                <div class="large-12 columns"><a href="<?php echo get_permalink(); ?>" class="button alert">Más</a></div>
               </div>
             </div>
             <?php endwhile; wp_reset_query(); ?>

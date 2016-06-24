@@ -25,7 +25,7 @@
           <!-- albumes anteriores -->
           <div class="row">
             <div class="large-12 columns">
-              <h1>Titulo</h1>
+              <h1>ALBUMES ANTERIORES</h1>
             </div>
             <?php query_posts('category_name=albumes&posts_per_page=6' ); while ( have_posts() ) : the_post(); ?>
             <div class="large-2 columns text-center">
