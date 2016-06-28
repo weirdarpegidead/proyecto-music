@@ -12,7 +12,7 @@
                 </div>
                 <div class="medium-4 columns">
                   <a href="<?php echo get_permalink(); ?>">
-                    <?php if ( has_post_thumbnail() ) { the_post_thumbnail( 'slide' ); } ?>
+                    <?php if ( has_post_thumbnail() ) { the_post_thumbnail( 'cuadrada' ); } ?>
                   </a>
                 </div>
                 <div class="medium-1 columns text-center alinear-fondo">

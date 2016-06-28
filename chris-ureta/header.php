@@ -56,9 +56,9 @@
               <ul class="menu align-right">
                 <li><a href="https://www.facebook.com/chrisuretaoficial/?fref=ts"><i class="fi-social-facebook"></i></a></li>
                 <li><a href="#"><i class="fi-social-google-plus"></i></a></li>
-                <li><a href="#"><i class="fi-social-linkedin"></i></a></li>
                 <li><a href="#"><i class="fi-social-twitter"></i></a></li>
                 <li><a href="#"><i class="fi-social-youtube"></i></a></li>
+                <li><a href="https://soundcloud.com/beatitud"><img width="20.19" src="<?php bloginfo('template_directory'); ?>/img/soundcloud.png"></a></li>
               </ul>
             </div>
           </div>

@@ -10,7 +10,8 @@ add_filter( 'show_admin_bar', '__return_false' );
 register_nav_menus ( array(
     'menu_principal' => 'menu_header',
     'menu_footer' => 'footer',
-    'menu_galerias' => 'galerias'
+    'menu_galerias' => 'galerias',
+    'menu_videos' => 'videos'
     ));
 /* === agrego una extencion para el excerpt personalizada ===
 function custom_excerpt_length( $length ) {

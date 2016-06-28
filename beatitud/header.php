@@ -59,7 +59,7 @@
               <ul class="menu align-right">
                 <li><a href="https://www.facebook.com/beatitudproducciones/?fref=ts"><i class="fi-social-facebook"></i></a></li>
                 <li><a href="#"><i class="fi-social-google-plus"></i></a></li>
-                <li><a href="#"><img width="23.06" src="<?php bloginfo('template_directory'); ?>/img/soundcloud.jpg"></a></li>
+                <li><a href="https://soundcloud.com/beatitud"><img width="23.06" src="<?php bloginfo('template_directory'); ?>/img/soundcloud.png"></a></li>
                 <li><a href="#"><i class="fi-social-twitter"></i></a></li>
                 <li><a href="https://www.youtube.com/channel/UCYUujS8JlAmOEY06Rr91aEQ"><i class="fi-social-youtube"></i></a></li>
               </ul>

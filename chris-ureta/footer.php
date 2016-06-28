@@ -2,16 +2,15 @@
           <div class="row footer">
             <div class="medium-6 medium-offset-3 columns text-center">
               <a href="#"><img src="<?php bloginfo('template_directory'); ?>/img/logo.png"></a>
-              <a href="#">321654987</a>
-              <p>Theatre 2016</p>
+              <a href="mailto:manager@chrisureta.com">Contacto</a>
             </div>
             <div class="medium-3 columns social">
               <ul class="menu align-right">
-                <li><a href="#"><i class="fi-social-facebook"></i></a></li>
+                <li><a href="https://www.facebook.com/chrisuretaoficial/?fref=ts"><i class="fi-social-facebook"></i></a></li>
                 <li><a href="#"><i class="fi-social-google-plus"></i></a></li>
                 <li><a href="#"><i class="fi-social-twitter"></i></a></li>
                 <li><a href="#"><i class="fi-social-youtube"></i></a></li>
-                <li><a href="#"><img width="14.42" src="<?php bloginfo('template_directory'); ?>/img/soundcloud.png"></a></li>
+                <li><a href="https://soundcloud.com/beatitud"><img width="14.42" src="<?php bloginfo('template_directory'); ?>/img/soundcloud.png"></a></li>
               </ul>
             </div>
           </div>

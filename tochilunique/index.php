@@ -11,14 +11,38 @@
           </div>
           <!-- noticias -->
           <div class="row">
-            <?php query_posts('category_name=noticias,talleres,eventos&posts_per_page=4' ); while ( have_posts() ) : the_post(); ?>
             <div class="small-6 medium-3 columns text-center mascara">
-              <a href="<?php echo get_permalink(); ?>"><?php if ( has_post_thumbnail() ) { the_post_thumbnail( 'cuadrada' ); } ?></a>
-              <h4><span><?php the_title(); ?></span></h4>
-              <?php my_excerpt(30); ?>
-              <a href="<?php echo get_permalink(); ?>" class="button alert">Más</a>
+              <a href="<?php echo site_url(); ?>/videos-2">
+                <img src="<?php echo site_url(); ?>/wp-content/uploads/2016/05/videos-700x700.jpg">
+              </a>
+              <h4><span>Videos</span></h4>
+              <p></p>
+              <a href="<?php echo site_url(); ?>/videos-2" class="button alert">Más</a>
             </div>
-            <?php endwhile; wp_reset_query(); ?>
+            <div class="small-6 medium-3 columns text-center mascara">
+              <a href="<?php echo site_url(); ?>/talleres-2">
+                <img src="<?php echo site_url(); ?>/wp-content/uploads/2016/05/talleres-700x700.jpg">
+              </a>
+              <h4><span>Talleres</span></h4>
+              <p></p>
+              <a href="<?php echo site_url(); ?>/talleres-2" class="button alert">Más</a>
+            </div>
+            <div class="small-6 medium-3 columns text-center mascara">
+              <a href="<?php echo site_url(); ?>/eventos-2">
+                <img src="<?php echo site_url(); ?>/wp-content/uploads/2016/05/eventos.jpg">
+              </a>
+              <h4><span>Eventos</span></h4>
+              <p></p>
+              <a href="<?php echo site_url(); ?>/eventos-2" class="button alert">Más</a>
+            </div>
+            <div class="small-6 medium-3 columns text-center mascara">
+              <a href="<?php echo site_url(); ?>/noticias">
+                <img src="<?php echo site_url(); ?>/wp-content/uploads/2016/05/ima5-700x700.jpg">
+              </a>
+              <h4><span>Noticias</span></h4>
+              <p></p>
+              <a href="<?php echo site_url(); ?>/noticias" class="button alert">Más</a>
+            </div>
           </div>
           <?php get_footer(); ?>
           

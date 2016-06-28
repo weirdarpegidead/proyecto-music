@@ -1,10 +1,10 @@
           <?php
           /*
-          Template Name: galerias-año-presente
+          Template Name: videos año presente
           */
           ?>
           <?php get_header(); ?>
-          <!-- contenido galerias -->
+          <!-- contenido videos -->
           <div class="row contenido page" data-equalizer>
             <div class="large-12 columns text-center">
               <h1><span><?php the_title(); ?></span></h1>
@@ -17,14 +17,14 @@
                   array(
                   'container' => false,
                   'items_wrap' => '<ul class="menu align-right">%3$s</ul>',
-                  'theme_location' => 'menu_galerias'
+                  'theme_location' => 'menu_videos'
                   )); ?>
                 </div>
               </div>
             </div>
             <?php 
             $paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
-            $the_query = new WP_Query( array( 'category_name' => 'galeria', 'year'  => 2016,'posts_per_page' => 6, 'paged' => $paged ) ); ?>
+            $the_query = new WP_Query( array( 'category_name' => 'videos', 'year'  => 2016,'posts_per_page' => 6, 'paged' => $paged ) ); ?>
             <?php if ( $the_query->have_posts() ) : ?>
             <!-- pagination here -->
             <!-- the loop -->

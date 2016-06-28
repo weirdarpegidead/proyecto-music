@@ -67,8 +67,7 @@ h1, h2, h3, h4, h5, h6, p, dl, a {
 	text-align: center; }
 /* === slide === */
 .slide .orbit-container {
-	height: auto !important;
-	overflow: visible; }
+	height: auto !important; }
 .slide .orbit-container li {
 	max-height: none !important; }
 /* === contenido === */
@@ -97,8 +96,6 @@ h1, h2, h3, h4, h5, h6, p, dl, a {
 		font-size: 1.3rem; }
 	.contenido .meta p {
 		color: #999999; }
-.prox-event ul:first-child {
-	background-color: tomato; }
 .single img.attachment-cuadrada {
 	float: left;
 	margin-right: 1rem; }
